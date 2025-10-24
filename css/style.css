@@ -1,16 +1,14 @@
-/* General Styles & Gothic Base */
 :root {
-  --primary-red: #8b0000; /* Dark Blood Red */
-  --secondary-red: #b22222; /* Firebrick */
+  --primary-red: #8b0000;
+  --secondary-red: #b22222;
   --dark-bg: #1a1a1a;
   --text-color: #f0f0f0;
-  --accent-gold: #daa520; /* Goldenrod for accents */
+  --accent-gold: #daa520;
   --border-dark: #333;
-  --card-bg: rgba(25, 25, 25, 0.7); /* Slightly transparent dark */
+  --card-bg: rgba(25, 25, 25, 0.7);
   --radius: 10px;
 }
 
-/* Importing Gothic Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 body {
@@ -20,7 +18,7 @@ body {
   background-color: var(--dark-bg);
   color: var(--text-color);
   line-height: 1.6;
-  background-image: url("https://via.placeholder.com/1920x1080/000000/333333?text=Gothic+Background+Texture"); /* Placeholder for a subtle dark texture */
+  background-image: url("https://via.placeholder.com/1920x1080/000000/333333?text=Gothic+Background+Texture");
   background-size: cover;
   background-attachment: fixed;
 }
@@ -51,7 +49,6 @@ a:hover {
   padding: 20px;
 }
 
-/* Header */
 .main-header {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 0;
@@ -66,15 +63,15 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Allows header items to wrap on smaller screens */
+  flex-wrap: wrap;
 }
 
 .main-header h1 {
   margin: 0;
   font-size: 2.5em;
   color: var(--primary-red);
-  flex-grow: 1; /* Allows h1 to take more space */
-  text-align: left; /* Align h1 to left */
+  flex-grow: 1;
+  text-align: left;
 }
 
 .main-header nav ul {
@@ -99,7 +96,6 @@ a:hover {
   border-color: var(--accent-gold);
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   background-color: var(--primary-red);
@@ -141,7 +137,6 @@ a:hover {
   border-color: var(--text-color);
 }
 
-/* Sections */
 section {
   padding: 80px 0;
   text-align: center;
@@ -175,7 +170,6 @@ section {
   font-size: 1.1em;
 }
 
-/* Skills Section */
 .skills-section {
   background-color: var(--dark-bg);
   padding: 60px 0;
@@ -246,13 +240,9 @@ section {
   font-size: 1.2em;
 }
 
-/* Project Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   margin-top: 50px;
 }
@@ -260,7 +250,7 @@ section {
 .project-card {
   background-color: var(--card-bg);
   border: 2px solid var(--primary-red);
-  border-radius: var(--radius); /* Rounded rectangular container */
+  border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -278,8 +268,8 @@ section {
 
 .project-card img {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
-  object-fit: cover; /* Ensures images cover the area without distortion */
+  height: 200px;
+  object-fit: cover;
   border-bottom: 1px solid var(--border-dark);
   margin-bottom: 15px;
 }
@@ -295,10 +285,9 @@ section {
   font-size: 0.95em;
   color: var(--text-color);
   padding: 0 15px;
-  flex-grow: 1; /* Allows paragraph to take available space */
+  flex-grow: 1;
 }
 
-/* Social Links */
 .social-links {
   margin-top: 30px;
   display: flex;
@@ -357,7 +346,7 @@ section {
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-  width: calc(100% - 20px); /* Account for padding */
+  width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid var(--border-dark);
   border-radius: 5px;
@@ -431,7 +420,7 @@ section {
   }
 
   .project-grid {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .project-card img {
@@ -458,6 +447,6 @@ section {
   }
   .form-group input,
   .form-group textarea {
-    width: calc(100% - 10px); /* Adjust for smaller padding */
+    width: calc(100% - 10px);
   }
 }
